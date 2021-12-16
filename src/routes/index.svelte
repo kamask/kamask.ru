@@ -8,9 +8,9 @@ import Logo from "./_index/Logo.svelte";
 </div>
 
 <svelte:head>
-    <title>KSK</title>
-    <meta name="keywords" content="KSK">
-    <meta name="description" content="KSK">
+    <title>kamask.ru</title>
+    <meta name="keywords" content="kamask">
+    <meta name="description" content="kamask">
     <style>
         @keyframes logo-rotating{
         0%{
