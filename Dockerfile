@@ -4,6 +4,7 @@ COPY app/ .
 COPY package.json .
 COPY cleanPackageJson.js .
 COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
 RUN node ./cleanPackageJson.js
 ENV NODE_ENV=production
 RUN npm i
