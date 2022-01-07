@@ -1,6 +1,7 @@
 FROM node:alpine
 WORKDIR /app
 COPY app/ .
+RUN ln -s /app/client/runtime ./static/
 COPY package.json .
 COPY cleanPackageJson.js .
 RUN node ./cleanPackageJson.js
