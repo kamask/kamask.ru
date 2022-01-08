@@ -4,7 +4,7 @@ export async function handle({ request, resolve }) {
     let response = await resolve(request);
     
     if (response.status === 404) {
-        request.path = '/404';
+        request.url.pathname = '/404';
         response = await resolve(request);
         response.status= 404;
     }
