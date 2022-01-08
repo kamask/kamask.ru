@@ -1390,7 +1390,7 @@ function set_prerendering(value) {
 async function handle({ request, resolve: resolve2 }) {
   let response = await resolve2(request);
   if (response.status === 404) {
-    request.path = "/404";
+    request.url.pathname = "/404";
     response = await resolve2(request);
     response.status = 404;
   }
